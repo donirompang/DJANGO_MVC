@@ -19,6 +19,7 @@
         </div>
         
         {% for b in blog %}
+      
         <div class="b-content">
             <div class="row b-padding-kanan-kiri">
                 <div class="mx-auto">
@@ -37,11 +38,11 @@
                 <h2>{{b.judul}}</h2>
             </div>
             <div class="row b-padding-kanan-kiri">
-                <p>{{b.isi_kontent}}</p>
+                <p>{{b.isi_kontent|truncatewords:30}}</p>
 
             </div>
             <div class="row b-padding-kanan-kiri">
-                <a href="#">Baca selengkapnya</a>
+                <a href="{% url 'blog_detail' blog_id=b.id %}">Baca selengkapnya</a>
             </div>
         </div>
         {% endfor %}

@@ -7,4 +7,5 @@ class Blog (models.Model):
     jumlah_komen = models.CharField(max_length = 255)
     judul = models.CharField(max_length = 255)
     isi_kontent = models.TextField(max_length = 255)
+    image = models.FileField(upload_to='documents/') #ini eksperimen
 
