@@ -1,0 +1,35 @@
+
+{% extends 'base/header_footer.html' %}
+{% load static %}
+{% block content %}
+   
+    <div id="mentor-container" class="container">
+        <div class="row mt-5">
+            <div class="mx-auto">
+                <h3>Our Mentor</h3>
+            </div>
+        </div>
+
+        {% for m in mentor %}
+        <div class="mentor-content">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid mentor-img" src="{{m.gambar}}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mentor-h4">{{m.nama}}</h4>
+                    <h5 class="mentor-h5">{{m.profesi}}</h5>
+                    <p class="mentor-p">"{{m.pesan}}"</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    
+    </div>
+
+    
+{% endblock %}
+
+
+

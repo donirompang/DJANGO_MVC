@@ -1,0 +1,81 @@
+
+{% extends 'base/header_footer.html' %}
+{% load static %}
+{% block content %}
+    <div id="author-outer">
+        <div class="container">
+            
+            <!-- row image -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="{% static 'img/profile-pic2.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <!-- row nama + summary -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-left">
+                    <h3>Doni Hadiyansyah</h3>
+                    <p class="text-justify"><strong>Please write your summary</strong>, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis massa vel nunc vehicula dignissim. Integer et dolor sed augue condimentum ultricies non at enim. Maecenas id nisl convallis, faucibus sapien in, porta eros. Aliquam sit amet magna auctor, molestie est in, hendrerit elit. Vestibulum varius posuere tortor et elementum. Aliquam sagittis tristique lectus at mattis. Duis eget justo a lacus tempus congue. In sollicitudin vitae leo non tempor. Nullam luctus eget nunc nec egestas. Fusce dictum, libero sed malesuada vehicula, velit sapien mollis ante, non ultricies eros ligula eu ex. Sed metus dolor, iaculis in pulvinar eu, suscipit a velit. Phasellus eu ipsum vitae neque scelerisque ultricies eu quis enim. Integer in risus ac sapien auctor auctor sed ut nisi. In nunc sem, ullamcorper eget justo in, condimentum elementum odio. </p>
+                </div>
+            </div>
+
+            <!-- row tabel biodata -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-left">
+                    <table class="table author-borderless">
+                        <tbody>
+                            <tr>
+                                <td scope="row">Alamat</td>
+                                <td>: Jalan Malang</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Telephone</td>
+                                <td>: 666</td> 
+                            </tr>
+                            <tr>
+                                <td scope="row">Education</td>
+                                <td>: Bachelor</td> 
+                            </tr>
+                            <tr>
+                                <td scope="row">Profession</td>
+                                <td>: Science</td> 
+                            </tr>
+                            <tr>
+                                <td scope="row">Nationality</td>
+                                <td>: Indonesia</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Company</td>
+                                <td>: ALTA</td> 
+                            </tr>
+                            <tr>
+                                <td scope="row">Email</td>
+                                <td>: doni@alphatech.id</td> 
+                            </tr>
+                            <tr>
+                                <td scope="row">Address</td>
+                                <td>: Malang</td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- row google map -->
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-left">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.6571018597317!2d112.6095480162836!3d-7.966444565285847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882865ded0697%3A0xa77fa961a7c4e4b7!2sSepulsa+Lodge+Malang!5e0!3m2!1sen!2sid!4v1550015318490" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end outer container -->
+
+
+    
+{% endblock %}
+
+
+

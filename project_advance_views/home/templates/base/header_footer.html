@@ -1,0 +1,102 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>Alpha Tech Academy</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" >
+    </head>
+    <body>
+
+        <header class="container-fluid pt-3 pb-5">
+            <div class="float-left">
+                <p id="logo-text" class="h2 pl-2 text-center">Alpha Tech Academy</p>
+            </div>
+
+            <ul id="main-nav" class="nav float-right pr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'mentee' %}">Mentee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'mentor' %}">Mentor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'author' %}">Author</a>
+                </li>
+            </ul>
+        </header>
+        <!-- END HEADER-->
+
+        <div class="clear-float"></div>
+
+        <!-- START PROFILE-->
+        <div id="profile" class="pt-5 pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto">
+                        <img src="{% static 'img/alpha-logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto text-center mt-3">
+                        <h1 id="h-alpha-tech" class="text-white">Alpha Tech Academy</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mx-auto">
+                        <p id="p-alpha-tech" class="text-center text-white">Alpha Tech Academy is a tech talent incubator that gives everyone (even<br> non IT background) a chance to be a professional Tech Talent within 3<br> months. Contact person : Email : academy@alphatech.id Mobile phone :<br> 0877 9609 9530</p>
+                    </div>
+                </div>
+                
+            </div> 
+        </div>
+        <!-- END PROFILE-->
+
+        {% block content %}
+        {% endblock %}
+
+        <!-- ++ start footer ++ -->
+        <div id="footer-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="mx-auto">
+                        <p id="p-footer-1">Our Product : 
+                            <img src="{% static 'img/logo-grey-alphapay.png' %}" alt="">
+                            <img src="{% static 'img/logo-grey-sepulsa.png' %}" alt="">
+                            <img src="{% static 'img/logo-grey-alphabill.png' %}" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="mx-auto">
+                            <p id="p-footer-2">Contact Person : Mobile Phone: 0877 9609 9530. Email : <a href="google.com">academy@alphatech.id</a></p> 
+                    </div>
+                </div>
+            </div>
+        </div><!-- end footer -->
+    
+
+        <script src="{% static 'js/bootstrap.min.js' %}"></script> 
+    </body>
+</html>
+
+
+
+

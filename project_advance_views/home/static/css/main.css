@@ -1,0 +1,209 @@
+#logo-text{
+    font-size: 160%;
+}
+
+.clear-float{
+    clear: both;
+}
+
+#profile{
+
+    background: #00CAD1;
+
+}
+
+#h-alpha-tech{
+    font-size: 300%;
+}
+
+.text-white{
+    color: white;
+}
+
+#p-alpha-tech{
+    font-size: 110%;
+}
+
+ul li {
+    position: relative;
+    top: -4px;
+}
+
+ul li a{
+    color: black;
+}
+
+
+/* ----END HEADER DAN PROFILE----- */
+
+
+/* ++++++++++ START KONTEN 1 ++++++++++++++ */
+
+#content-1{
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.padding-content-kiri{
+    padding-left: 130px;
+}
+
+.padding-content-kanan{
+    padding-right: 150px;
+
+}
+
+
+/* -------------END KONTENT 1--------------- */
+
+/* ++++++++++ START KONTEN 2 ++++++++++++++ */
+
+
+#container-2{
+    padding-bottom: 50px;
+}
+#p-content-2{
+    font-size: 160%;
+}
+.box-container {
+    width: 100%;
+    max-width: 200px;
+    min-height: 160px;
+    border: 1px solid aqua;
+    margin: 10px;
+   
+}
+
+.img-content{
+    padding-top: 50px;
+}
+
+.content-2{
+
+    padding : 0 125px;
+
+}
+
+/* -------------- end konten 2 ------------- */
+
+/* ++++++++++ START FOOTER ++++++++++++++ */
+
+#footer-1{
+    padding-top: 17px;
+    background-color: #00CAD1;
+    color: black;
+}
+
+#p-footer-1{
+    font-size: 140%;
+    color: black;
+}
+
+#footer-2 {
+    font-size: 120%;
+    background-color: black;
+    color: white;
+}
+
+#p-footer-2{
+    margin-top: 16px;
+}
+
+
+/* ========================================== END HOME =========================================== */
+
+
+
+
+
+/* ++++++++++++++++++++++ START BLOG ++++++++++++++++++++++++++ */
+.b-padding-kanan-kiri {
+    padding: 0 235px;
+}
+
+.b-content{
+    padding: 50px 0;
+}
+
+
+.b-img{
+    width: 100%;
+    max-width: 650px;
+    max-height: 350px;
+    height: 100%;
+   
+}
+
+.b-img-tambah{
+    width: 100px;
+    height: 100px;
+}
+
+hr{
+    width: 100%;
+    
+}
+
+/* ======================= END BLOG ========================== */
+
+
+
+
+/* ***************************** START MENTEE *********************************** */
+
+#mentee-container{
+
+    padding-bottom: 100px;
+
+}
+.mentee-img{
+    height: 200px;
+}
+
+.mentee-content{
+    padding-top: 30px;
+}
+
+/* ======================= END MENTEE ========================== */
+
+
+
+
+/* ***************************** START MENTOR *********************************** */
+#mentor-container{
+
+    padding-bottom: 100px;
+
+}
+.mentor-img{
+    width: 230px;
+    height: 230px;
+}
+
+.mentor-content{
+    padding-top: 30px;
+}
+
+.mentor-h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color : grey;
+}
+/* ======================= END MENTOR ========================== */
+
+
+
+
+
+/* ***************************** START AUTHOR *********************************** */
+
+
+#author-outer{
+    padding: 50px 0;
+}
+.author-borderless td, .author-borderless th {
+    border: none;
+}
+
+/* ----------------------------END AUTHOR -------------------------------- */

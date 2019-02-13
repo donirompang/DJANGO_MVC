@@ -1,0 +1,34 @@
+
+{% extends 'base/header_footer.html' %}
+{% load static %}
+{% block content %}
+   
+    <div id="mentee-container" class="container">
+        <div class="row mt-5">
+            <div class="mx-auto">
+                <h3>Our Mentee</h3>
+            </div>
+        </div>
+
+        {% for m in mentee %}
+        <div class="mentee-content">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid mentee-img" src="{{m.gambar}}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h4>{{m.nama}}</h4>
+                    <p>"{{m.pesan}}"</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        
+    </div>
+
+    
+{% endblock %}
+
+
+

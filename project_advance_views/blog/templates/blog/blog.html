@@ -1,0 +1,56 @@
+
+{% extends 'base/header_footer.html' %}
+{% load static %}
+{% block content %}
+   
+    <div class="container">
+        <div class="row b-padding-kanan-kiri justify-content-center">
+            <div class="" >
+                <a href="{% url 'input_blog' %}"><img class="b-img-tambah" src="{% static 'img/tambah.png' %}" alt=""></a>
+            </div>
+            
+        </div>
+
+        <div class="row b-padding-kanan-kiri">
+            
+            <hr></hr>
+           
+            
+        </div>
+        
+        {% for b in blog %}
+        <div class="b-content">
+            <div class="row b-padding-kanan-kiri">
+                <div class="mx-auto">
+                    <img class="img-fluid b-img" src="{{b.gambar}}" alt="">
+                </div>
+            </div>
+            <div class="row b-padding-kanan-kiri justify-content-between">
+                <div>
+                    <p>{{b.created_date}}</p>
+                </div>
+                <div style="margin-right: 50px;">
+                    <p>{{b.jumlah_komen}} comment(s)</p>
+                </div>
+            </div>
+            <div class="row b-padding-kanan-kiri">
+                <h2>{{b.judul}}</h2>
+            </div>
+            <div class="row b-padding-kanan-kiri">
+                <p>{{b.isi_kontent}}</p>
+
+            </div>
+            <div class="row b-padding-kanan-kiri">
+                <a href="#">Baca selengkapnya</a>
+            </div>
+        </div>
+        {% endfor %}
+
+        
+    </div>
+
+    
+{% endblock %}
+
+
+
